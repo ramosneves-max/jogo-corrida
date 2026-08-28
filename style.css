@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 900px;
+    width: 100%;
+}
+
+.game-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.game-info h1 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 2.5em;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.stats p {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#gameCanvas {
+    display: block;
+    margin: 0 auto 20px;
+    border: 3px solid #333;
+    border-radius: 10px;
+    background: #87CEEB;
+    max-width: 100%;
+    height: auto;
+}
+
+.controls {
+    text-align: center;
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.controls p {
+    margin: 8px 0;
+    font-size: 1.05em;
+}
+
+.game-over {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 1000;
+}
+
+.game-over h2 {
+    color: #667eea;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.game-over p {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.game-over button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.game-over button:hover {
+    transform: scale(1.05);
+}
